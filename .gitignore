@@ -1,0 +1,48 @@
+# Ignore node_modules (for Node.js projects)
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore build directories
+/dist/
+/build/
+
+# Ignore system files
+.DS_Store   # macOS system file
+Thumbs.db   # Windows system file
+
+# Ignore environment files
+.env
+
+# Ignore IDE configurations (for JetBrains IDEs like IntelliJ, PyCharm, etc.)
+.idea/
+
+# Ignore VS Code configurations
+.vscode/
+
+# Ignore Python bytecode
+*.pyc
+
+# Ignore dependency directories (for Python)
+__pycache__/
+
+# Ignore compiled files (for Java, C++, etc.)
+*.class
+*.o
+*.a
+
+# Ignore temporary files (for Emacs, Vim, etc.)
+*~
+.vim/
+
+# Ignore coverage reports (for testing)
+coverage/
+
+# Ignore Docker files (optional)
+.docker/
+
+# Ignore other specific files
+secret_config.json
+package-lock.json
+

@@ -14,6 +14,7 @@ const Recipes = React.memo(({}) => {
       .then((response) => {
         if (response) {
           setAllRecipes(response.data);
+          console.log(response, 'response')
         }
       })
       .catch((error) => {
@@ -23,6 +24,7 @@ const Recipes = React.memo(({}) => {
 
   const searchData = (e) => {
     let val = e.target.value;
+    console.log(val, 'val')
     setSearchKey(val);
   };
 
@@ -43,7 +45,7 @@ const Recipes = React.memo(({}) => {
             className="bg-gray-500 text-white py-2 px-4 text-base hover:bg-gray-600 rounded mb-4 float-right"
             onClick={clearSearch}
           >
-            Back to search
+            Back to searcher
           </button>
           <h1 className="w-full text-2xl font-bold uppercase text-blue-400">
             Available Recipes
